@@ -5,12 +5,15 @@ import 'package:assetwize/data/repository/favorite_repository.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
+  await dotenv.load();
+  String apiKey = dotenv.env['API_KEY'] ?? '';
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: FirebaseOptions(
-      apiKey: "AIzaSyA4DQWqB0v5vcEvssPQcgz5dSnWSxgSEW8",
+      apiKey: apiKey,
       appId: "1:891771576875:android:22b91585eaeba52649c06e",
       messagingSenderId: "891771576875",
       projectId: "fir-demo-5e3d9",
