@@ -1,6 +1,6 @@
 import 'package:assetwize/core/constants/app_colors.dart';
 import 'package:assetwize/data/models/insurance_model.dart';
-import 'package:assetwize/services/firestore_services.dart';
+import 'package:assetwize/data/services/firestore_services.dart';
 import 'package:flutter/material.dart';
 
 class AddInsurancePage extends StatefulWidget {
