@@ -49,12 +49,11 @@ class _SectionHeaderState extends State<SectionHeader> {
   @override
   Widget build(BuildContext context) {
     final double screenWidth = MediaQuery.of(context).size.width;
-    final bool isWideScreen = screenWidth > 800; // 💻 threshold for PC/tablet
+    final bool isWideScreen = screenWidth > 800;
 
     return Container(
       child: Stack(
         children: [
-          // bottom divider line
           Positioned(
             bottom: 0,
             left: 0,
@@ -62,8 +61,6 @@ class _SectionHeaderState extends State<SectionHeader> {
             child: Container(height: 2, color: lightGrey),
           ),
 
-          // 📱 MOBILE: Scrollable tabs
-          // 💻 PC/TABLET: Expanded full width tabs
           isWideScreen
               ? Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,

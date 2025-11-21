@@ -48,7 +48,6 @@ class ArtsListScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 12),
 
-                // Listen to both ArtsCubit and FavoriteCubit
                 BlocBuilder<ArtCubit, ArtState>(
                   builder: (context, state) {
                     if (state.isLoading) {

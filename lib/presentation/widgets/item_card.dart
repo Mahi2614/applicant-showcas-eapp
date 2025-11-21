@@ -31,7 +31,7 @@ class ItemCard extends StatelessWidget {
       builder: (context, constraints) {
         final width = constraints.maxWidth;
 
-        // 🔥 Responsive conditions
+        //  Responsive conditions
         final bool isTablet = width > 600;
         final bool isLarge = width > 1000;
 

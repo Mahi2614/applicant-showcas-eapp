@@ -10,13 +10,8 @@ class HeaderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white, // background color optional
-      padding: const EdgeInsets.fromLTRB(
-        16,
-        40,
-        16,
-        16,
-      ), // top padding 40 for spacing
+      color: Colors.white,
+      padding: const EdgeInsets.fromLTRB(16, 40, 16, 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

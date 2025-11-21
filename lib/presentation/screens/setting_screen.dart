@@ -12,7 +12,7 @@ class SettingScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           "Settings",
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+          style: TextStyle(fontWeight: FontWeight.bold, color: black),
         ),
         elevation: 0,
         bottom: PreferredSize(
@@ -39,7 +39,7 @@ class SettingScreen extends StatelessWidget {
 
   Widget _settingsTile(IconData icon, String title, VoidCallback onTap) {
     return ListTile(
-      leading: Icon(icon, color: Colors.black),
+      leading: Icon(icon, color: black),
       title: Text(title, style: const TextStyle(fontSize: 16)),
       trailing: const Icon(Icons.arrow_forward_ios, size: 16),
       onTap: onTap,
